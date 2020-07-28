@@ -77,6 +77,13 @@ function mytheme_widgets() {
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 	) );
+
+	register_sidebar( array(
+		'id' => 'sidebar-notice',
+		'name' => 'お知らせ',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	) );
 }
 add_action( 'widgets_init', 'mytheme_widgets' );
 

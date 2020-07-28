@@ -2,7 +2,8 @@
     <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
-        <?php echo do_shortcode('[metaslider id=11287]'); ?>
+          <!-- <?php echo do_shortcode('[metaslider id=11287]'); ?> -->
+        <?php echo do_shortcode('[metaslider id=75]'); ?>
 
             <div class="container">
                 <div class="row">
@@ -30,7 +31,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
 		<h2><img src="<?php echo get_template_directory_uri(); ?>/img/oshina.png" alt="お品がき"></h2>
-<?php echo do_shortcode('[metaslider id=11373]'); ?>
+<?php echo do_shortcode('[metaslider id=188]'); ?>
 <p>各店舗によりメニューが異なります。メニュー写真は、掲載しておりませんので各店の店頭メニューにて、ご確認お願い致します。</p>
 <?php /* ?>
                 		<ul class="img_box">
