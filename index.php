@@ -17,13 +17,14 @@
     <section id="about" class="container content-section text-center">
 
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2><img src="<?php echo get_template_directory_uri(); ?>/img/sns.png" alt="sns"></h2>
-                <div class="sns">
-                <a class="twitter-timeline" data-width="100%" data-height="800" href="https://twitter.com/OHANA_DONMARU_S">Tweets by OHANA_DONMARU_S</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            	</div>
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2><img src="<?php echo get_template_directory_uri(); ?>/img/sns.png" alt="sns"></h2>
+            <div class="sns">
+              <a class="twitter-timeline" data-width="100%" data-height="800" href="https://twitter.com/OHANA_DONMARU_S">Tweets by OHANA_DONMARU_S</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
        		</div>
-		</div>
+		    </div>
+        <?php get_sidebar('notice'); ?>
     </section>
 
 		<div class="clear"></div>
@@ -97,7 +98,8 @@
 
 				<div id="form" class="clearfix">
 
-<?php echo do_shortcode('[contact-form-7 id="11318" title="mail1"]'); ?>
+          <!-- <?php echo do_shortcode('[contact-form-7 id="11318" title="mail1"]'); ?> -->
+          <?php echo do_shortcode('[contact-form-7 id="192" title="コンタクトフォーム2"]'); ?>
 
 
 

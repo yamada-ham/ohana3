@@ -5,6 +5,7 @@ Version: 3
 Author: T.T
 
 */
+@import url('./css/sidebar.css');
 
 .clear{
 	clear:both;
@@ -160,13 +161,9 @@ p.tenpo{
 
 }
 
-
-
 .single_content .floatleft ul li{
 	text-align:left !important;
 }
-
-
 
 
 #dataTable th {
