@@ -2,7 +2,7 @@
     <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
-          <!-- <?php echo do_shortcode('[metaslider id=11287]'); ?> -->
+          <!-- id=11287 -->
         <?php echo do_shortcode('[metaslider id=75]'); ?>
 
             <div class="container">
@@ -27,32 +27,20 @@
         <?php get_sidebar('notice'); ?>
     </section>
 
-		<div class="clear"></div>
+	<div class="clear"></div>
 	<section id="menu" class="container content-section-1 text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-		<h2><img src="<?php echo get_template_directory_uri(); ?>/img/oshina.png" alt="お品がき"></h2>
-<?php echo do_shortcode('[metaslider id=188]'); ?>
-<p>各店舗によりメニューが異なります。メニュー写真は、掲載しておりませんので各店の店頭メニューにて、ご確認お願い致します。</p>
-<?php /* ?>
-                		<ul class="img_box">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+		    <h2><img src="<?php echo get_template_directory_uri(); ?>/img/oshina.png" alt="お品がき"></h2>
+        <?php echo do_shortcode('[metaslider id=188]'); ?>
+        <!-- <ul class="img_box">
 					<li><img src="<?php echo get_template_directory_uri(); ?>/img/kaisen.png">おはな海鮮丼</li>
 					<li><img src="<?php echo get_template_directory_uri(); ?>/img/donmaru.png">丼丸丼</li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/img/hokai.png">おはな北海丼</li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/img/uogasi.png">おはな魚河岸丼</li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/img/ninki.png">人気丼</li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/img/om001.png">あじタタキ丼</li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/img/om006.png">金目鯛茶漬け丼</li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/img/om002.png">アボカドスペシャル丼</li>
-
-					<li><img src="<?php echo get_template_directory_uri(); ?>/img/om008.png">肉ビビンバ丼</li>
-
-
 				</ul>
-			<a href="<?php bloginfo('url'); ?>/menu"><div class="menu_link">メニュー一覧</div></a>
-<?php */ ?>
-            </div>
+			     <a href="<?php bloginfo('url'); ?>/menu"><div class="menu_link">メニュー一覧</div></a> -->
+          </div>
         </div>
+      <?php get_sidebar('food'); ?>
     </section>
 
     <!-- Download Section -->

@@ -72,18 +72,26 @@ add_action( 'after_setup_theme', 'mytheme_setup' );
 function mytheme_widgets() {
 
 	register_sidebar( array(
+		'id' => 'sidebar-notice',
+		'name' => 'お知らせ',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	) );
+
+	register_sidebar( array(
+		'id' => 'sidebar-food',
+		'name' => 'お品書き',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	) );
+
+	register_sidebar( array(
 		'id' => 'sidebar-company',
 		'name' => '企業情報',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 	) );
 
-	register_sidebar( array(
-		'id' => 'sidebar-notice',
-		'name' => 'お知らせ',
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-	) );
 }
 add_action( 'widgets_init', 'mytheme_widgets' );
 

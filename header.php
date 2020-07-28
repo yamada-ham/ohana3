@@ -5,7 +5,7 @@
 <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; Blog Archive <?php } ?> <?php wp_title(); ?></title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="content-language" content="ja">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="おはな丼丸">
@@ -33,7 +33,7 @@
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        
+
     <![endif]-->
 <?php wp_head(); ?>
 </head>
@@ -48,48 +48,45 @@
                     Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="おはな丼丸">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="おはな丼丸">
                 </a>
-<h1 class="rightsmall">創業 昭和５４年、「笹舟　丼丸」の暖簾店です。</h1>
+                <h1 class="rightsmall">創業 昭和５４年、「笹舟　丼丸」の暖簾店です。</h1>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-               
+
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-               
+
                     <li>
                         <a class="page-scroll" href="#page-top">TOP</a>
                     </li>
-                    
+
 		   			<li>
                         <a class="page-scroll" href="#about">お知らせ</a>
                     </li>
 
-                    
+
                     <li>
                         <a class="page-scroll" href="#menu">お品書き</a>
                     </li>
-                    
+
                     <li>
                         <a class="page-scroll" href="#download">店舗</a>
                     </li>
-                    
+
                     <li>
                         <a class="page-scroll" href="#schedule">会社概要</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">お問い合わせ</a>
                     </li>
-				
-	
+
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-
-
-

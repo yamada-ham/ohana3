@@ -1,14 +1,14 @@
 section.notice_box{
   width:100%;
 }
-
 section.notice_box div.in_notice_box{
   width:46%;
   margin: auto;
   background: rgb(253, 235, 235);
   padding:50px 40px 24px;
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 768px) {
 /* 480pxまでの幅の場合に適応される */
   section.notice_box div.in_notice_box{
     width:100%;
@@ -16,6 +16,7 @@ section.notice_box div.in_notice_box{
     padding:40px 28px 24px;
   }
 }
+
 section.notice_box h2.widgettitle{
   color:rgb(255, 92, 92);
   text-align: left;
@@ -24,6 +25,36 @@ section.notice_box h2.widgettitle{
 section.notice_box div.textwidget p{
   text-align: left;
   line-height: 1.9;
-  letter-spacing:1px;
+  font-size:16px;
+}
+section.notice_box{
+  width:100%;
+}
+
+section.food_box div.in_food_box{
+  width:46%;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+/* 480pxまでの幅の場合に適応される */
+  section.food_box div.in_food_box{
+    width:100%;
+    margin: auto;
+    padding:0px 28px;
+  }
+}
+
+section.food_box{
+  margin-top:40px;
+}
+section.food_box h2.widgettitle{
+  color:rgb(255, 92, 92);
+  text-align: left;
+  font-size:20px;
+}
+section.food_box div.textwidget p{
+  text-align: left;
+  line-height: 1.9;
   font-size:16px;
 }
