@@ -104,3 +104,29 @@ function mytheme_enqueue() {
 
 }
 add_action( 'wp_enqueue_scripts', 'mytheme_enqueue' );
+
+// ロゴの設置の設定
+function theme_customize($wp_customize){
+	//ロゴ画像
+	$wp_customize->add_section( 'logo_section', array(
+		'title' => 'ロゴ画像', //セクションのタイトル
+		'priority' => 60, //セクションの位置
+		'description' => 'ロゴ画像を使用する場合はアップロードしてください。画像を使用しない場合はタイトルがテキストで表示されます。', //セクションの説明
+	));
+
+		$wp_customize->add_setting( 'logo_url' );
+		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'logo_url', array(
+			'label' => 'ロゴ画像',//セッティングのタイトル
+			'section' => 'logo_section', //セクションID
+			'settings' => 'logo_url', //セッティングID
+			'description' => 'ロゴ画像を設定してください。', //セッティングの説明
+		)));
+}
+add_action( 'customize_register', 'theme_customize' );
+
+/* テーマカスタマイザーで設定された画像のURLを取得
+---------------------------------------------------------- */
+//ロゴ画像
+function get_the_logo_url(){
+	return esc_url( get_theme_mod( 'logo_url' ) );
+}

@@ -1,0 +1,89 @@
+nav.nav_wrap{
+  width:100%;
+  position:fixed;
+  z-index:5;
+}
+
+div.nav_box{
+  /* position:relative; */
+}
+div.in_nav_box{
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+div.in_nav_box{
+  background: #f97704;
+}
+div.nav_box div.title_box{
+  width:40%;
+}
+div.nav_box div.menu_btn_box{
+  display: block;
+  position: absolute;
+  z-index:5;
+  top:50%;
+  right:5%;
+  transform: translate(0%,-50%);
+}
+div.nav_box div.menu_btn_box button{
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+  padding: 9px 10px;
+  border: none;
+  border-radius: 4px;
+  appearance: none;
+  outline: none;
+}
+div.nav_box div.title_box div.in_title_box{
+  width:80%;
+  margin: auto;
+  padding:8px 0px;
+}
+div.nav_box div.title_box div.title_img_box img{
+  width:100%;
+}
+div.nav_box div.title_box a{
+  display: block;
+}
+div.nav_box div.title_box h2{
+  font-size:0.2rem;
+  text-align:center;
+  margin: 0;
+  white-space:nowrap;
+}
+div.nav_box div.menu_box{
+  width:60%;
+}
+div.nav_box div.menu_box ul.in_menu_box{
+  display:none;
+}
+
+div.nav_box div.menu_box ul{
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+}
+
+div.nav_box div.menu_box ul li a{
+  padding:20px 5px;
+  margin:0 5px;
+}
+
+@media screen and (min-width:768px) {
+  div.nav_box div.title_box div.in_title_box{
+    width:60%;
+    margin: auto;
+    padding:8px 0px;
+  }
+  div.nav_box div.menu_btn_box{
+    display: none;
+  }
+  div.nav_box div.menu_box ul.in_menu_box{
+    display:flex;
+  }
+}

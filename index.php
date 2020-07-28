@@ -1,18 +1,11 @@
 <?php get_header(); ?>
     <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
+    <header class="">
+        <div class="">
           <!-- id=11287 -->
-        <?php echo do_shortcode('[metaslider id=75]'); ?>
-
-            <div class="container">
-                <div class="row">
-
-                </div>
-            </div>
+      <?php echo do_shortcode('[metaslider id=75]'); ?>
         </div>
     </header>
-
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
 
