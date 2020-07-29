@@ -78,7 +78,7 @@
             </ul>
         </div>
     </div>
-    <div class="menu_btn_box"><button type="button">
+    <div class="menu_btn_box"><button type="button" id="menubtn">
         Menu <i class="fa fa-bars"></i>
     </button></div>
   </div>
