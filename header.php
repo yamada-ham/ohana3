@@ -72,7 +72,7 @@
              ?>
             <?php foreach($nav_array as $item) : ?>
               <li>
-                <a class="" href="<?=$item['href'] ?>"><?= $item['text'] ?></a>
+                <a href="<?=$item['href'] ?>"><?= $item['text'] ?></a>
               </li>
             <?php endforeach; ?>
             </ul>

@@ -5,7 +5,7 @@ nav.nav_wrap{
 }
 
 div.nav_box{
-  position:relative;
+  /* position:relative; */
 }
 div.in_nav_box{
   display:flex;
@@ -14,7 +14,7 @@ div.in_nav_box{
   align-items: center;
 }
 div.in_nav_box{
-  transition: background 1s ease-in-out, padding 0.5s ease-in-out;
+  transition: background 1s ease-in-out;
   background: transparent;
 }
 div.in_nav_box.scroll{
@@ -75,17 +75,21 @@ div.nav_box div.menu_box ul{
 }
 
 div.nav_box div.menu_box ul li{
-  padding-bottom:15px;
+  padding-left:10px;
 }
 
 div.nav_box div.menu_box ul li a{
-  padding:20px 5px;
-  margin:0 5px;
+  display: block;
+  padding:10px 5px;
+  margin:10px 5px;
+}
+div.nav_box div.menu_box ul li.active{
+  background:rgba(255, 255, 255, 0.4);
 }
 
 @media screen and (min-width:768px) {
   div.nav_box div.title_box{
-    width:50%
+    width:40%
   }
   div.nav_box div.title_box div.in_title_box{
     width:60%;
@@ -93,7 +97,7 @@ div.nav_box div.menu_box ul li a{
     padding:8px 0px;
   }
   div.nav_box div.menu_box{
-    width:50%;
+    width:60%;
   }
   div.nav_box div.menu_box ul.in_menu_box{
     display:flex;
@@ -102,7 +106,13 @@ div.nav_box div.menu_box ul li a{
     align-items: center;
   }
   div.nav_box div.menu_box ul li{
-    padding-bottom:0px;
+    padding:0px;
+    margin-left:0;
+  }
+  div.nav_box div.menu_box ul li a{
+    display: block;
+    padding:5px 5px;
+    margin:5px 5px;
   }
   div.nav_box div.menu_btn_box{
     display: none;
