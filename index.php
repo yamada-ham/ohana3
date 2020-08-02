@@ -3,7 +3,7 @@
     <header class="">
         <div class="">
           <!-- id=11287 -->
-      <?php echo do_shortcode('[metaslider id=75]'); ?>
+      <?php echo do_shortcode('[metaslider id=11287]'); ?>
         </div>
     </header>
     <!-- About Section -->
@@ -25,7 +25,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
 		    <h2><img src="<?php echo get_template_directory_uri(); ?>/img/oshina.png" alt="お品がき"></h2>
-        <?php echo do_shortcode('[metaslider id=188]'); ?>
+        <?php echo do_shortcode('[metaslider id=11373]'); ?>
         <!-- <ul class="img_box">
 					<li><img src="<?php echo get_template_directory_uri(); ?>/img/kaisen.png">おはな海鮮丼</li>
 					<li><img src="<?php echo get_template_directory_uri(); ?>/img/donmaru.png">丼丸丼</li>
