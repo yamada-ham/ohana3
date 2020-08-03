@@ -40,46 +40,58 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-<!-- Navigation -->
-<nav class="nav_wrap">
-<div class="nav_box">
-    <div class="in_nav_box">
-      <div class="title_box">
-        <div class="in_title_box">
-          <!-- ロゴの設置 -->
-          <?php $logo_url = get_the_logo_url('logo_url'); ?>
-          <?php if($logo_url): ?>
-            <div class="title_img_box"><a href="<?php echo home_url( '/' );?>" ><img src="<?php echo get_the_logo_url(); ?>" alt="<?php bloginfo('name'); ?>" /></a></div>
-          <?php else: ?>
-            <div class="title_text_box"><a href="<?php echo home_url( '/' ); ?>" ><h1><?php bloginfo('name'); ?></h1></a></div>
-          <?php endif; ?>
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                  <?php $logo_url = get_the_logo_url('logo_url'); ?>
+                  <?php if($logo_url): ?>
+                    <img src="<?php echo get_the_logo_url(); ?>" alt="<?php bloginfo('name'); ?>" />
+                  <?php else: ?>
+                    <a href="<?php echo home_url( '/' ); ?>" ><h1><?php bloginfo('name'); ?></h1>
+                  <?php endif; ?>
+                </a>
+<h1 class="rightsmall">創業 昭和５４年、「笹舟　丼丸」の暖簾店です。</h1>
+            </div>
 
-          <h2 class="">創業 昭和５４年、「笹舟　丼丸」の暖簾店です。</h2>
-        </div>
-      </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 
-        <div class="menu_box">
-            <ul class="in_menu_box">
-            <?php
-              $nav_array = [
-                ['text'=>'TOP','href'=>'#page-top'],
-                ['text'=>'お知らせ','href'=>'#about'],
-                ['text'=>'お品書き','href'=>'#menu'],
-                ['text'=>'店舗','href'=>'#download'],
-                ['text'=>'会社概要','href'=>'#schedule'],
-                ['text'=>'お問い合わせ','href'=>'#contact'],
-              ];
-             ?>
-            <?php foreach($nav_array as $item) : ?>
-              <li>
-                <a href="<?=$item['href'] ?>"><?= $item['text'] ?></a>
-              </li>
-            <?php endforeach; ?>
-            </ul>
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+
+                    <li>
+                        <a class="page-scroll" href="#page-top">TOP</a>
+                    </li>
+
+		   			<li>
+                        <a class="page-scroll" href="#about">お知らせ</a>
+                    </li>
+
+
+                    <li>
+                        <a class="page-scroll" href="#menu">お品書き</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="#download">店舗</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="#schedule">会社概要</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">お問い合わせ</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-    </div>
-    <div class="menu_btn_box"><button type="button" id="menubtn">
-        Menu <i class="fa fa-bars"></i>
-    </button></div>
-  </div>
-</nav>
+        <!-- /.container -->
+    </nav>
